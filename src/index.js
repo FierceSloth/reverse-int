@@ -1,3 +1,4 @@
-module.exports = function reverse(/* n */) {
-  throw new Error('Not implemented');
+module.exports = function reverse(n) {
+  const str = String(n).split('').reverse().join('');
+  return parseInt(str, 10);
 };
